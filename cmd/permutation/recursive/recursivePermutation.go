@@ -6,5 +6,5 @@ import (
 
 func main() {
 	str := "abcd"
-	permutation.RecursivePermutation([]byte(str), 0)
+	permutation.Recursive([]byte(str), 0)
 }
