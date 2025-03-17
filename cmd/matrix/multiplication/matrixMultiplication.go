@@ -24,7 +24,7 @@ func main() {
 
 	c, err := matrix.Multiplication(a, b)
 	if err != nil {
-		fmt.Printf("Failed to add matrices, error: %s", err.Error())
+		fmt.Printf("Failed to multiply above matrices, error: %s", err.Error())
 	} else {
 		fmt.Printf("Multiplication of above matrices %v", c)
 	}
