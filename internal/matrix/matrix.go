@@ -56,6 +56,20 @@ func Multiplication(a, b [][]int) ([][]int, error) {
 	return c, nil
 }
 
+func Transposition(a [][]int) error {
+	if checkInValidMatrices(a, a) {
+		return ErrInvalidMatrix
+	}
+
+	for i := range a {
+		for j := i + 1; j < len(a[0]); j++ {
+			a[i][j], a[j][i] = a[j][i], a[i][j]
+		}
+	}
+
+	return nil
+}
+
 // --- Helper method --- //
 
 func checkInValidMatrices(a, b [][]int) bool {
